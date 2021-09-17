@@ -1,21 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { UserListItemComponent } from './view/user-list-item/user-list-item.component';
 import { UserListComponent } from './view/user-list/user-list.component';
+import { Store } from './service/store.service';
+import { UserListFilterComponent } from './view/user-list-filter/user-list-filter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListItemComponent,
-    UserListComponent
+    UserListComponent,
+    UserListFilterComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

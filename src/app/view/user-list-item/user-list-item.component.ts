@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { User } from '../../user';
 
 @Component({
@@ -7,6 +7,7 @@ import { User } from '../../user';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UserListItemComponent {
+  
   @Input()
   user!: User;
 }
