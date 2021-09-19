@@ -9,13 +9,19 @@ export interface State {
     items: User[];
     filter: UserListFilter;
   };
+  userDetail: {
+    user: User | null;
+  }
 }
 
 export const initialState = {
   userList: {
     items: [],
     filter: {
-      nameFilter: ''
+      nameFilter: '',
     }
-  }
-};
+  },
+    userDetail: {
+      user: null,
+    }
+  };
